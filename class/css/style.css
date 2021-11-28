@@ -1,0 +1,67 @@
+@import "content/reset.css";
+@import "content/login.css";
+@import "content/clock.css";
+@import "content/todo.css";
+@import "content/quotes.css";
+
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
+html {
+  font-family: sans-serif, "BenchNine", Arial, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  gap: 2px;
+  place-items: center center;
+}
+
+.login-screen {
+  grid-column: 2/3;
+  grid-row: 3/5;
+}
+
+.clock {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.todo-form {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.todo-list {
+  grid-column: 1/2;
+  grid-row: 3/5;
+}
+
+.quotes {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.weather {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 60%;
+}
